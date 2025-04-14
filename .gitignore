@@ -1,0 +1,5 @@
+# Node modules (librerías instaladas con npm)
+node_modules/
+
+# VSCode settings
+.vscode/
