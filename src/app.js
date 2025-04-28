@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import router from './routes/routes.js';
+import routerFormulas from './routes/formulas.routes.js';
 
 //inicializacion de express
 const app = express();
@@ -18,6 +19,7 @@ app.use(express.json()); //este middleware es para que entienda el json que se e
 
 //es para las rutas del servidor, se separaran a una carpeta aparte para tener un mejor orden
 app.use(router);
+app.use(routerFormulas);
 
 
 export default app;
