@@ -3,6 +3,7 @@ import morgan from 'morgan';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import router from './routes/routes.js';
+import routerProveedores from './routes/proveedores.routes.js';
 
 //inicializacion de express
 const app = express();
@@ -20,4 +21,5 @@ app.use(express.json()); //este middleware es para que entienda el json que se e
 app.use(router);
 
 
+app.use('/proveedores', routerProveedores);
 export default app;
