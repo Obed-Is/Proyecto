@@ -1,7 +1,6 @@
 import express from 'express';
 import { productos } from '../models/productos.js';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
 const __dirname = import.meta.dirname;
 
