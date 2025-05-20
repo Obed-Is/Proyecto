@@ -2,8 +2,8 @@ import express from 'express';
 import morgan from 'morgan';
 import path from 'path';
 import router from './routes/routes.js';
+import routerProveedores from './routes/proveedores.routes.js';
 import routerProductos from './routes/productos.routes.js';
-
 
 //inicializacion de express
 const app = express();
@@ -24,4 +24,5 @@ app.use(router);
 app.use(routerProductos);
 
 
+app.use('/proveedores', routerProveedores);
 export default app;

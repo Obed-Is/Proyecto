@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proveedores</title>
+    <link rel="stylesheet" href="../styles/proveedores.css">
+    <script defer src="../scripts/proveedores.js"></script>
+</head>
+<body>
+    <nav class="bg-dark">
+        <button class="btn border-0 rounded-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#FFF"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-menu-2">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M4 6l16 0" />
+                <path d="M4 12l16 0" />
+                <path d="M4 18l16 0" />
+            </svg>
+        </button>
+
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="menuLateral" aria-labelledby="menuLateralLabel">
+            <div class="offcanvas-header d-flex">
+                <img src="https://static.vecteezy.com/system/resources/thumbnails/045/815/724/small/cow-logo-design-inspiration-bull-and-buffalo-cow-animal-logo-design-free-vector.jpg"
+                    alt="logo" class="img-fluid" width="75px" height="75px">
+                <h2 class="offcanvas-title fw-bold fs-1" id="menuLateralLabel">Vaca vieja</h2>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-unstyled fs-5">
+                    <li>
+                        <a href="productos.html" class="nav-link ps-3 py-2 rounded-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-package">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M12 3l8 4.5l0 9l-8 4.5l-8 -4.5l0 -9l8 -4.5" />
+                                <path d="M12 12l8 -4.5" />
+                                <path d="M12 12l0 9" />
+                                <path d="M12 12l-8 -4.5" />
+                                <path d="M16 5.25l-8 4.5" />
+                            </svg>
+                            Productos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="proveedores.html" class="nav-link activo ps-3 py-2 rounded-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-truck-delivery">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                                <path d="M3 9l4 0" />
+                            </svg>
+                            Proveedores
+                        </a>
+                    </li>
+                    <li>
+                        <a href="formulas.html" class="nav-link ps-3 py-2 rounded-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="icon icon-tabler icons-tabler-outline icon-tabler-id">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M3 4m0 3a3 3 0 0 1 3 -3h12a3 3 0 0 1 3 3v10a3 3 0 0 1 -3 3h-12a3 3 0 0 1 -3 -3z" />
+                                <path d="M9 10m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                                <path d="M15 8l2 0" />
+                                <path d="M15 12l2 0" />
+                                <path d="M7 16l10 0" />
+                            </svg>
+                            Formulas
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="w-100 m-auto bg-dark text-light py-4 shadow">
+        <h1 class="h1 fs-1 fw-semibold text-center">
+            <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 27" fill="none"
+                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                class="icon icon-tabler icons-tabler-outline icon-tabler-truck-delivery">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M17 17m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+                <path d="M5 17h-2v-4m-1 -8h11v12m-4 0h6m4 0h2v-6h-8m0 -5h5l3 5" />
+                <path d="M3 9l4 0" />
+            </svg>
+            Proveedores
+        </h1>
+    </div>
+
+    <div class="main-content">
+        <div class="d-flex justify-content-end mb-3">
+            <button type="button" class="btn btn-dark btn-submit" data-bs-toggle="modal"
+                data-bs-target="#proveedorModal">
+                <i class="bi bi-plus-circle"></i> Nuevo Proveedor
+            </button>
+        </div>
+
+        <div class="table-responsive">
+            <table class="table table-hover">
+                <thead>
+                    <tr class="text-center">
+                        <th>Nombre</th>
+                        <th>Contactos</th>
+                        <th>Productos</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="proveedoresTableBody">
+                    <!-- AQUI VAN LOS PROVEEDORES -->
+                </tbody>
+            </table>
+            <p id="noProveedores" class="mx-auto w-25 text-center">
+                <!-- AQUI VA UN MENSAJE CUANDO NO HAY PROVEEDORES -->
+            </p>
+        </div>
+
+        <!-- Modal del Formulario -->
+        <div class="modal fade" id="proveedorModal" tabindex="-1" aria-labelledby="proveedorModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="proveedorModalLabel">Registro de Proveedor</h5>
+                        <button type="button" class="btn-close btn-close-white" onclick="document.getElementById('proveedorForm').reset()" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="proveedorForm" onsubmit="return agregarProveedor(event)">
+                            <div class="row">
+                                <div class="col-md-12 mb-3">
+                                    <label for="nombreProveedor" class="form-label">
+                                        <i class="bi bi-building"></i> Nombre del Proveedor
+                                    </label>
+                                    <input type="text" class="form-control" id="nombreProveedor" minlength="3" required>
+                                </div>
+                            </div>
+
+                            <div class="contactos-container">
+                                <h5 class="mb-3">
+                                    <i class="bi bi-person-lines-fill"></i> Contacto
+                                </h5>
+                                <div id="contactosList">
+                                    <div class="contacto-item">
+                                        <div class="row">
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Tipo de Contacto</label>
+                                                <select class="form-select tipo-contacto" required>
+                                                    <option value="telefono">Teléfono</option>
+                                                    <option value="email">Correo Electrónico</option>
+                                                </select>
+                                            </div>
+                                            <div class="col-md-6 mb-3">
+                                                <label class="form-label">Contacto</label>
+                                                <input type="text" class="form-control valor-contacto" required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="productos-container">
+                                <h5 class="mb-3">
+                                    <i class="bi bi-box-seam"></i> Productos que Provee
+                                </h5>
+                                <div id="productosList">
+                                    <div class="producto-item">
+                                        <div class="row">
+                                            <div class="col-md-12 mb-3">
+                                                <label class="form-label">Productos </label>
+                                                <input name="productosNuevoProveedor" id="productosNuevoProveedor" type="text" class="form-control producto-nombre" placeholder="Leche, suero etc.." required>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-end mt-4">
+                                <button type="button" class="btn btn-secondary me-2"
+                                    data-bs-dismiss="modal" onclick="document.getElementById('proveedorForm').reset()">Cancelar</button>
+                                <button type="submit" class="btn btn-submit">
+                                    <i class="bi bi-save"></i> Guardar Proveedor
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL PARA EDITAR UN PROVEEDOR -->
+    <div class="modal fade" id="editarProveedorModal" tabindex="-1" aria-labelledby="editarProveedorModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content text-black">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editarProveedorModalLabel">Editar Proveedor</h5>
+                    <button type="button" class="btn-close btn-close-white" onclick="document.getElementById('editarProveedorForm').reset()" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="editarProveedorForm" onsubmit="return actualizarProveedor(event)">
+                        <!-- ID oculto -->
+                        <input type="hidden" id="proveedorId">
+
+                        <div class="row">
+                            <div class="col-md-12 mb-3">
+                                <label for="nombreProveedorEdit" class="form-label">
+                                    <i class="bi bi-building"></i> Nombre del Proveedor
+                                </label>
+                                <input type="text" class="form-control" id="nombreProveedorEdit" minlength="3" required>
+                            </div>
+                        </div>
+
+                        <div class="contactos-container">
+                            <h5 class="mb-3"><i class="bi bi-person-lines-fill"></i> Contacto</h5>
+                            <div id="contactosListEdit">
+                                <div class="contacto-item">
+                                    <div class="row">
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">Tipo de Contacto</label>
+                                            <select class="form-select tipo-contacto" id="tipoContactoEdit" required>
+                                                <option value="telefono">Teléfono</option>
+                                                <option value="email">Correo Electrónico</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-6 mb-3">
+                                            <label class="form-label">Contacto</label>
+                                            <input type="text" class="form-control valor-contacto" id="valorContactoEdit" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="productos-container">
+                            <h5 class="mb-3"><i class="bi bi-box-seam"></i> Productos que Provee</h5>
+                            <div id="productosListEdit">
+                                <div class="producto-item">
+                                    <div class="row">
+                                        <div class="col-md-12 mb-3">
+                                            <label class="form-label">Productos</label>
+                                            <input name="productosProveedorEdit" id="productosProveedorEdit" type="text" class="form-control producto-nombre" required>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex justify-content-end mt-4">
+                            <button type="button" class="btn btn-secondary me-2" data-bs-dismiss="modal" onclick="document.getElementById('editarProveedorForm').reset()">Cancelar</button>
+                            <button id="btnEditarProveedor" type="submit" class="btn btn-submit">
+                                <i class="bi bi-save"></i> Actualizar Proveedor
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
