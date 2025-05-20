@@ -1,31 +1,56 @@
-## Requisitos
 
-1. Tener instalado git, pueden verificar si lo tienes instalado abriendo un CMD y ejecutando 'git --version'
-    ``` Si lo tienes instalado les aparecera la version que tienen, si no lo tienen deben instalarlo
-   ```
+# Proyecto
 
-2. Tener instalado Node Js, que es el ejecutable que les envie al grupo
-    ``` lo pueden verificar poniendo en el CMD 'node --version', les aparecera la version que tienen en caso de tenerlo
-   ```
+## Requisitos Previos
 
-## Instalación del proyecto
+Para poder tener el proyecto en local es necesario que tengan todo esto:
 
-1. Clonar el repositorio:
-   ```En la terminal
+- **Git**  
+  Verifiquen si tienen git, abran una terminal (CMD o PowerShell) y ejecutan:  
+  ```bash
+  git --version
+  ```  
+  Si no tienen Git instalado, descarguenlo y lo instalan desde [git-scm.com](https://git-scm.com/).
+
+- **Node.js**  
+  Verifica la instalación ejecutando en la terminal:  
+  ```bash
+  node --version
+  ```  
+  Si no está instalado, usa el ejecutable que se compartió con el grupo o descárgalo desde [nodejs.org](https://nodejs.org/).
+
+---
+
+## Instalación del Proyecto
+
+Si ya tienen lo anterior pueden tener el proyecto haciendo lo siguiente:
+
+1. **Clonar el repositorio**  
+   Abran una terminal o cmd y ejecuten esto:  
+   ```bash
    git clone https://github.com/Obed-Is/Proyecto.git
    ```
 
-2. Colocarse en la carpeta que se creo con el nombre 'Proyecto':
-   ``` Abrir o navegar por la terminal con 'cd Proyecto' a la carpeta que se creo al hacer 'git clone'
+2. **Entrar a la carpeta del proyecto**  
+   Naveguen a la carpeta llamada 'Proyecto' que se ha creado:  
+   ```bash
+   cd Proyecto
    ```
 
-3. Instalar las dependencias:
-   ```En la terminal ejecutar
+3. **Instalar dependencias**  
+   Cuando esten en el proyecto abran una terminal ahi y ejecuten este comando: 
+   ```bash
    npm install
    ```
 
-4. Ejecutar el proyecto:
-   ```En la terminal del proyecto ejecutar este comando:
+4. **Ejecutar el proyecto**  
+   Si la intalacion les fue bien, ejecuten este comando en la misma terminal para ejecutar el proyecto  
+   ```bash
    npm run dev
    ```
-## Con esto deberian tener el proyecto listo para trabajar
+
+---
+
+## ¡Listo!
+
+Ya esa seria la instalacion y ejecucion del proyecto :D

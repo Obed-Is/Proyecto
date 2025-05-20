@@ -8,6 +8,7 @@ const __dirname = import.meta.dirname;
 router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/formulas.html'));
 });
+
 //obtener todas las formulas
 router.get('/api/all', async (req, res) => {
     const data = await formulasModel.getFormula();
