@@ -17,9 +17,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan('dev')); //morgan es un middleware para ver las peticiones que llegan al servidor
 app.use(express.json()); //este middleware es para que entienda el json que se envia a traves de un form(html) como un post
+app.use(express.urlencoded({ extended: true })); //este middleware es para que entienda el json que se envia a traves de un form(html) como un post
 
 //es para las rutas del servidor, se separaran a una carpeta aparte para tener un mejor orden
 app.use(router);
+app.use('/formulas', routerFormulas);
 
 app.use(routerProductos);
 
