@@ -20,7 +20,7 @@ app.use(express.urlencoded({ extended: true })); //este middleware es para que e
 
 //es para las rutas del servidor, se separaran a una carpeta aparte para tener un mejor orden
 app.use('/formulas', routerFormulas);
-app.use(routerProductos);
+app.use('/productos', routerProductos);
 app.use('/proveedores', routerProveedores);
 
 export default app;

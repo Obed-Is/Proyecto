@@ -5,7 +5,7 @@ import { Producto } from '../models/producto.model.js'; // Importar el modelo Pr
 const router = express.Router();
 const __dirname = import.meta.dirname;
 
-router.get('/productos', (req, res) => {
+router.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, '../views/productos.html'));
 });
 
@@ -27,10 +27,10 @@ router.post("/agregarProductos", async (req, res) => {
   try {
     const nuevoProducto = new Producto(req.body);
     await nuevoProducto.save();
-    res.send("Producto guardado con éxito"+ "<a href='/productos'>Volver</a>");
+    res.json({ success: true, message: "Producto guardado con éxito" });
   } catch (error) {
     console.error(error);
-    res.status(500).send("Error al guardar el producto");
+    res.status(500).json({ success: false, message: "Error al guardar el producto" });
   }
 });
 

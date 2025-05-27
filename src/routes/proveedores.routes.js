@@ -14,7 +14,7 @@ routerProveedores.get('/api/obtenerProveedores', async (req, res) => {
     const peticion = await provModel.obtenerProveedores();
 
     if (peticion === false) {
-        res.json({ success: false });
+        return res.json({ success: false });
     }
     res.json(peticion);
 })
